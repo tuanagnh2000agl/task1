@@ -1,0 +1,68 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 22px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+ 
+    .c-main {
+        padding: 0;
+    
+        .l-container {
+            max-width: 1000px;
+    
+            .c-gnav {
+                width: 100%;
+    
+                li {
+                    display: inline-block;
+            
+                    + li {
+                        margin-left: 28px;
+                    }
+                }
+            
+                a {
+                    font-size: 1.4rem;
+                    text-transform: capitalize;
+                }
+    
+              
+            
+                .c-gnav__logo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                   
+                }
+            
+                .c-gnav__link {
+                    font-size: 14px;
+                    font-family: "Yu Gothic";
+
+                    .c-gnav__link.bold {
+                        font-weight: bold;
+                    }
+    
+                    .space {
+                        margin-right: 1px;
+                    }
+                }
+            
+                .c-gnav__space {
+                    margin-top: 18px;
+                    border: 1px solid #ccc;
+                    border-collapse: separate;
+                    background-color: #ccc;
+                }
+            
+            }
+        }
+    }
+    
+}
+/* Main menu
+------------------------------------------------------------*/
+
