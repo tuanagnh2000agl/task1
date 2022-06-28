@@ -1205,6 +1205,7 @@ main.p-top {
             .c-table {
                 &1 {
                     display: flex;
+                    border: 1px solid #ccc;
 
                     dl {
                         width: 100%;
@@ -1215,38 +1216,49 @@ main.p-top {
                             color: #fff;
                             height: 36px;
                             text-align: center;
-
+                            border-bottom: 1px solid #ccc;
                         }
 
                         dd {
                             padding: 7px 20px;
                             text-align: center;
+                            border-bottom: 1px solid #ccc;
 
+                            &:last-child {
+                                border-bottom: 0;
+                            }
                         }
 
                         &.c-col1 {
                             max-width: 174px;
+                            border-right: 1px solid #ccc;
 
                             dt {
-                                border: 1px solid #ccc;
+                               
 
                             }
 
                             dd {
-                                border: 1px solid #ccc;
+                                // border: 1px solid #ccc;
                                 background: #ebebeb;
                             }
                         }
 
                         &.c-col2 {
+                            border-right: 1px solid #ccc;
+
+                            &:last-child {
+                                border-right: 0;
+                            }
+
                             dt {
-                                border: 1px solid #ccc;
+                                
                                 color: #fff;
                                 padding: 10px 20px;
                             }
 
                             dd {
-                                border: 1px solid #ccc;
+                                // border: 1px solid #ccc;
 
                             }
                         }
