@@ -2,7 +2,7 @@
 ------------------------------------------------------------*/
 body {
     margin: 0 auto;
-    font-family: " Yu Gothic", sans-serif;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
     min-width: $base-width;
     line-height: 1.5;
     @include sp {
@@ -33,7 +33,7 @@ main.p-top {
     .l-main1 {
         padding: 0;
 
-        .c-top__logo {
+        .c-top__breadcrumb {
             padding: 0 0 34px;
 
             i {
@@ -75,7 +75,7 @@ main.p-top {
                 left: 40px;
                 bottom: 42px;
                 line-height: 30px;
-                font-weight: 600;
+                font-weight: 500;
                 word-spacing: 2.4px;
 
                 .ml {
@@ -117,7 +117,7 @@ main.p-top {
     .l-main2 {
         padding: 0;
 
-        .c-body__lable {
+        .c-top__lable {
             background-color: #fff9da;
             border-bottom: 1px solid #ffd800;
             border-right: 1px solid #ffd800;
@@ -135,30 +135,30 @@ main.p-top {
             
         }
 
-        .c-body__content {
-            .c-body__card {
+        .c-top__content {
+            .c-top__card {
                 display: flex;
 
-                +.c-body__card {
+                +.c-top__card {
                     margin-top: 30px;
                 }
 
-                .c-body__img {
+                .c-top__img {
                     background-repeat: no-repeat;
                     max-width: 350px;
                     position: relative;
 
                 
 
-                    .c-body_img-img {
+                    .c-top_img-img {
                         position: relative;
                     }
 
-                    .c-body__img-category {
+                    .c-top__img-category {
                         position: absolute;
                         display: inline-block;
                         padding: 1px 22px;
-                        font-weight: 500;
+                        font-weight: 400;
                         left: 0;
                         top: 0;
                         font-size: 1.4rem;
@@ -167,7 +167,7 @@ main.p-top {
                     }
                 }
 
-                .c-body__info {
+                .c-top__info {
                     position: relative;
                     top: -9px;
                     max-width: 610px;
@@ -176,7 +176,7 @@ main.p-top {
                     font-size: 1.4rem;
                     letter-spacing: 0.3px;
 
-                    .c-body__info--text {
+                    .c-top__info--text {
                         line-height: 1.42;
                         letter-spacing: 0.4px;
                         margin-top: 6px;
@@ -187,12 +187,11 @@ main.p-top {
         
                
         
-                .c-body__title-button {
+                .c-top__title-button {
                     position: absolute;
                     background-color: #afafaf;
                     padding: 11px 56px;
                     font-family: "Yu Gothic";
-
                     bottom: -10px;
                     right: 0;
                     border-radius: 6px;
@@ -205,21 +204,22 @@ main.p-top {
             }
         }
 
-        .c-body__link {
+        .c-top__link {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 60px 0 120px;
     
-            .c-body__button {
+            .u-top__button {
+                font-family: "Yu Gothic";
                 padding: 21.5px 94px;
-                background-color: rgb(233, 218, 7);
+                background-color: #ffd800;
                 color: #fff;
                 border: 2px solid #000;
                 border-radius: 6px;
-                font-weight: 500;
-                font-size: 1.7rem;
-                letter-spacing: 1px;
+                font-weight: bold;
+                font-size: 1.125rem;
+                line-height: 20px;
             }
         }
     
@@ -231,7 +231,7 @@ main.p-top {
         max-width: 1000px;
         margin: 0 auto;
 
-        .c-body__lable {
+        .c-top__lable {
             background-color: #fff2f2;
             border-bottom: 1px solid #f68e56;
             border-right: 1px solid #f68e56;
@@ -249,22 +249,22 @@ main.p-top {
         }
 
         // 
-        .c-body__content {
+        .c-top__content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
     
-            .c-body__list--text {
+            .c-top__list--text {
                 max-width: 300px;
                 margin-bottom: 44px;
+                font-weight: 500;
+                font-family: "Yu Gothic";
 
-                .c-body__list--img {
+                .c-top__list--img {
                     position: relative;
-
-                    
                 }
 
-                .c-body__list--button {
+                .c-top__list--button {
                     position: relative;
                     top: 0;
                     left: 0;
@@ -287,9 +287,7 @@ main.p-top {
                     }
                 }
     
-                .c-body__list--title {
-                    // padding-right: 0;
-                    font-family: "Yu Gothic";
+                .c-top__list--title {
                     font-size: 1.35rem;
                     line-height: 20px;
                     word-spacing: 0;
@@ -301,20 +299,20 @@ main.p-top {
         }
 
         
-        .c-body__link {
+        .c-top__link {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             margin: 8px 0 121px;
 
-            .c-body__link--button {
-                padding: 17px 95px;
+            .u-top__link--button {
+                padding: 17px 91px;
                 background-color: rgb(246, 142, 86);
                 color: #fff;
                 border: 2px solid #000;
                 border-radius: 3px;
-                font-weight: 600;
-                font-size: 1.7rem;
+                font-weight: bold;
+                font-size: 18px;
                 letter-spacing: 0.6px;
                 font-family: "Yu Gothic";
 
@@ -328,7 +326,7 @@ main.p-top {
         max-width: 1000px;
         margin: 0 auto;
 
-        .c-body__lable {
+        .c-top__lable {
             background-color: #ebebeb;
             border-bottom: 1px solid #6dcff6;
             border-right: 1px solid #6dcff6;
@@ -347,20 +345,20 @@ main.p-top {
         }
 
         // 
-        .c-body__content {
+        .c-top__content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
 
-            .c-body__list--text {
+            .c-top__list--text {
                 max-width: 475px;
                 margin-bottom: 45px;
 
-                .c-body__list--img {
+                .c-top__list--img {
                     position: relative;
                 }
 
-                .c-body__list--button {
+                .c-top__list--button {
                     font-family: "Yu Gothic";
 
                     position: relative;
@@ -375,7 +373,7 @@ main.p-top {
                     }
                 }
     
-                .c-body__list--title {
+                .c-top__list--title {
                     font-family: "Yu Gothic";
                     font-size: 1.4rem;
                     line-height: 1.4;
@@ -388,22 +386,22 @@ main.p-top {
         }
 
         
-        .c-body__link {
+        .c-top__link {
             background-color: #6dcff6;
-            padding: 12px 149px;
-            border: 1px solid #000;
+            padding: 17px 149px;
+            border: 2px solid #000;
             text-align: center;
             border-radius: 4px;
             margin-bottom: 116px;
 
-            .c-body__link--button {
+            .u-top__link--button {
                 color: #fff;
-                font-weight: 500;
-                font-size: 2rem;
+                font-weight: 700;
+                font-size: 18px;
                 word-spacing: 0.1px;
                 font-family: "Yu Gothic";
+                line-height: 20px;
 
-                
                 span {
                     margin-left: -2px;
                 }
@@ -420,7 +418,7 @@ main.p-top {
 // link1
 .p-top {
     .c-home {
-        padding: 0 0 30px;
+        padding: 0 0 61px;
 
         .c-home__link {
             padding: 0 0 34px;
@@ -462,7 +460,7 @@ main.p-top {
 
                 }
                 width: 300px;
-                background-color: #00adef;
+                background-color: rgb(0, 173, 239);
                 color: #fff;
                 font-size: 1.5rem;
                 padding: 0;
@@ -501,10 +499,15 @@ main.p-top {
                 font-size: 1.4rem;
                 margin-bottom: 12px;
                 letter-spacing: 0.4;
+                font-weight: 500;
 
                 .dummy-ml {
                     padding-left: 1px;
                     display: inline-block;
+                }
+
+                .link_red {
+                    margin-left: 3px;
                 }
 
                 a {
@@ -527,7 +530,7 @@ main.p-top {
 
             .c-title__img {
                 max-width: 300px;
-                margin-bottom: 39px;
+                margin-bottom: 42px;
 
                 .bg-green {
                     background-color: $bg-green;
@@ -554,7 +557,7 @@ main.p-top {
                 .c-title__img-text {
                     font-family: "Yu Gothic";
                     font-size: 1.4rem;
-                    line-height: 1.4;
+                    line-height: 1.2;
                 }
             }
         }
@@ -608,6 +611,7 @@ main.p-top {
             .c-title__img {
                 max-width: 235px;
                 margin-bottom: 12px;
+                font-weight: 500;
 
                 .editone {
                     padding-left: -20px;
@@ -635,7 +639,6 @@ main.p-top {
                 }
 
                 .c-title__img-text {
-
                     font-family: "Yu Gothic";
                     font-size: 1.4rem;
                     line-height: 1.4;
@@ -726,8 +729,18 @@ main.p-top {
                 table,
                 th,
                 td {
-                    border: 1px solid black;
+                    border: 1px solid #d9d9d9;
                     border-collapse: collapse;
+                    font-weight: 500;
+                }
+
+                thead {
+                    height: 37px;
+                }
+
+                .color-x {
+                    background-color: #acd373;
+                    color: #ffff;
                 }
                 display: block;
                
@@ -782,7 +795,7 @@ main.p-top {
                 .c-table {
                     &2 {
                         font-size: 1.4rem;
-                        font-weight: 400;
+                        font-weight: 500;
                         font-family: "Yu Gothic";
                         margin-top: 12px;
                         letter-spacing: 0.4px;
@@ -887,7 +900,7 @@ main.p-top {
 
         .c-home__button {
             text-align: center;
-            border: 1px solid #000;
+            border: 2px solid #000;
             background-color: #6dcff6;
             padding: 16.5px 0;
             font-family: "Yu Gothic";
@@ -932,9 +945,9 @@ main.p-top {
             }
 
             .c-content_title-text {
-                font-size: 14px;
+                font-size: 15px;
                 font-family: "Yu Gothic";
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 20px;
 
                 strong {
@@ -953,9 +966,9 @@ main.p-top {
                 } 
     
                 .c-content__icon1 {
-                    font-size: 14px;
+                    font-size: 15px;
                     font-family: "Yu Gothic";
-                    font-weight: 600;
+                    font-weight: 500;
                     line-height: 20px;
 
                     .text1 {
@@ -989,7 +1002,7 @@ main.p-top {
                     color: #11638a;
 
                     .c-content__text {
-                        font-size: 14px;
+                        font-size: 15px;
                         line-height: 20px;
                         font-weight: 600;
                         font-family: "Yu Gothic";
@@ -1041,19 +1054,19 @@ main.p-top {
         .c-content__title-icon {
             .c-content__space1 {
                 padding-bottom: 30px;
-                font-size: 1.4rem;
+                font-size: 15px;
                 font-family: "Yu Gothic";
                 line-height: 20px;
                 display: block;
-                font-weight: 600;
+                font-weight: 500;
             }
 
             .c-content__space--text {
                 margin-bottom: 22px;
-                font-size: 1.4rem;
+                font-size: 15px;
                 font-family: "Yu Gothic";
                 display: block;
-                font-weight: 600;
+                font-weight: 500;
             }
 
             .c-conteny__list {
@@ -1185,8 +1198,8 @@ main.p-top {
             margin-top: 10px;
             margin-bottom: 124px;
             line-height: 20px;
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 500;
             font-family: "Yu Gothic";
 
             .c-table {

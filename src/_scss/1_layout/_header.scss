@@ -11,10 +11,9 @@
         padding: 0;
     
         .l-container {
-            max-width: 1000px;
-    
             .c-gnav {
                 width: 100%;
+                max-width: 1000px;
     
                 li {
                     display: inline-block;
@@ -42,10 +41,10 @@
                     font-size: 14px;
                     font-family: "Yu Gothic";
 
-                    .c-gnav__link.bold {
+                    .c-gnav__link.is-bold {
                         font-weight: bold;
                     }
-    
+
                     .space {
                         margin-right: 1px;
                     }
